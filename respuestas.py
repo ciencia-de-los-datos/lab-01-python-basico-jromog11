@@ -1,18 +1,3 @@
-"""
-Laboratorio de Programación Básica en Python para Manejo de Datos
------------------------------------------------------------------------------------------
-
-Este archivo contiene las preguntas que se van a realizar en el laboratorio.
-
-No puede utilizar pandas, numpy o scipy. Se debe utilizar solo las funciones de python
-básicas.
-
-Utilice el archivo `data.csv` para resolver las preguntas.
-
-
-"""
-
-
 def pregunta_01(directory):
     with open(directory, "r") as archivo:
         lineas = archivo.readlines()
@@ -272,7 +257,7 @@ def pregunta_09(directory):
     valores_ord = dict(sorted(conteo_final.items()))
 
     return valores_ord
-
+        
 
 def pregunta_10(directory):
     with open(directory, "r") as archivo:
@@ -368,3 +353,4 @@ def pregunta_12(directory):
 
     return resultado
 
+print(pregunta_12("data.csv"))

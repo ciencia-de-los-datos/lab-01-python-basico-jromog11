@@ -12,9 +12,8 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 """
 
-
-def pregunta_01(directory):
-    with open(directory, "r") as archivo:
+def pregunta_01():
+    with open("data.csv", "r") as archivo:
         lineas = archivo.readlines()
 
     numeros = list()
@@ -28,8 +27,8 @@ def pregunta_01(directory):
     return suma
 
 
-def pregunta_02(directory):
-    with open(directory, "r") as archivo:
+def pregunta_02():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
     secuencia = list()
@@ -55,8 +54,8 @@ def pregunta_02(directory):
     return lista_ordenada
 
 
-def pregunta_03(directory):
-    with open(directory, "r") as archivo:
+def pregunta_03():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
     secuencia = list()
@@ -81,8 +80,8 @@ def pregunta_03(directory):
     return lista_ordenada
 
 
-def pregunta_04(directory):
-    with open(directory, "r") as archivo:
+def pregunta_04():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
     fecha = list()
@@ -114,8 +113,8 @@ def pregunta_04(directory):
     return listaOrdenada
 
 
-def pregunta_05(directory):
-    with open(directory, "r") as archivo:
+def pregunta_05():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
         secuencia = list()
@@ -141,8 +140,8 @@ def pregunta_05(directory):
         return conteo
 
 
-def pregunta_06(directory):
-    with open(directory, "r") as archivo:
+def pregunta_06():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
     secuencia = list()
@@ -185,8 +184,8 @@ def pregunta_06(directory):
     return conteo
 
 
-def pregunta_07(directory):
-    with open(directory, "r") as archivo:
+def pregunta_07():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
     secuencia = list()
@@ -212,8 +211,8 @@ def pregunta_07(directory):
     return conteo
 
 
-def pregunta_08(directory):
-    with open(directory, "r") as archivo:
+def pregunta_08():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
     secuencia = list()
@@ -239,8 +238,8 @@ def pregunta_08(directory):
     return conteo
 
 
-def pregunta_09(directory):
-    with open(directory, "r") as archivo:
+def pregunta_09():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
     
     secuencia = list()
@@ -274,8 +273,8 @@ def pregunta_09(directory):
     return valores_ord
 
 
-def pregunta_10(directory):
-    with open(directory, "r") as archivo:
+def pregunta_10():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
     
     col1 = list()
@@ -309,8 +308,8 @@ def pregunta_10(directory):
     return resultado
 
 
-def pregunta_11(directory):
-    with open(directory, "r") as archivo:
+def pregunta_11():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
     
     secuencia = list()
@@ -338,8 +337,8 @@ def pregunta_11(directory):
     return valores_ord
 
 
-def pregunta_12(directory):
-    with open(directory, "r") as archivo:
+def pregunta_12():
+    with open("data.csv", "r") as archivo:
         contenido = archivo.readlines()
 
     secuencia = list()
@@ -367,4 +366,3 @@ def pregunta_12(directory):
     resultado = dict(sorted(conteo.items()))
 
     return resultado
-
